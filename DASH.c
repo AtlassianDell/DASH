@@ -4,6 +4,8 @@
  * Author - Banu Prasanth Pulicharla
  * Description - This shell will help one learn about processes and 
  * 				 basic process management in a shell.
+ *
+ * Keeping these notes here to maintain that this is not entirely mine. - AtlassianDell 
  */
  
 #include <stdio.h>
@@ -22,13 +24,13 @@
 size_t MAX_LINE_LEN = 10000;
 
 // builtin commands
-#define EXIT_STR "exit"
+#define EXIT_STR "leave"
 #define FORE_G "fg"
-#define KILL_STR "kill"
-#define LISTJOBS "listjobs"
+#define KILL_STR "purge"
+#define LISTJOBS "-lj"
 #define EXIT_CMD 0
 #define UNKNOWN_CMD 99
-#define AMP_STR "&"
+#define AMP_STR "and"
 #define IN_STR "<"
 #define OP_STR ">"
 #define PIPE_STR "|"
