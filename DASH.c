@@ -34,6 +34,7 @@ size_t MAX_LINE_LEN = 10000;
 #define IN_STR "<"
 #define OP_STR ">"
 #define PIPE_STR "|"
+#define PRINT "echo"
 
 FILE *fp; // file struct for stdin
 char **tokens;
@@ -143,6 +144,10 @@ int run_command()
     else if (strcmp(tokens[0], EXIT_STR) == 0) // EXIT_STR = "exit"
     {
         return EXIT_CMD; // returning 0
+    }
+    else if (strcmp(tokens[0], PRINT) == 0)
+    {
+      
     }
     else if (strcmp(tokens[0], FORE_G) == 0) // FORE_G = "fg"
     {
